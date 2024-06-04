@@ -1,180 +1,157 @@
-<p align="left">
-  <a href="https://iotsharp.io/">
-    <img src="docs/static/img/logo_white.svg" width="360px" alt="IoTSharp logo" />
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="left" dir="auto">
+  <a href="https://iotsharp.io/" rel="nofollow">
+    <img src="/IoTSharp/IoTSharp/raw/master/docs/static/img/logo_white.svg" width="360px" alt="IoTSharp 徽标" style="max-width: 100%;">
   </a>
 </p>
-
-[![Build status](https://ci.appveyor.com/api/projects/status/5o23f5vss89ct2lw/branch/master?svg=true)](https://ci.appveyor.com/project/MaiKeBing/iotsharp/branch/master)
-![GitHub](https://img.shields.io/github/license/iotsharp/iotsharp.svg)
-[![.NET Core build](https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-build.yml/badge.svg)](https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-build.yml)
-[![pages-build-deployment](https://github.com/IoTSharp/IoTSharp/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/IoTSharp/IoTSharp/actions/workflows/pages/pages-build-deployment)
-[![Building and Packaging](https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-publish.yml)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/maikebing/iotsharp?style=flat-square)
-![Docker Pulls](https://img.shields.io/docker/pulls/maikebing/iotsharp)
-![GitHub all releases](https://img.shields.io/github/downloads/iotsharp/iotsharp/total)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FIoTSharp%2FIoTSharp.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FIoTSharp%2FIoTSharp?ref=badge_shield)
-[![star](https://gitee.com/IoTSharp/IoTSharp/badge/star.svg?theme=gvp)](https://gitee.com/IoTSharp/IoTSharp/stargazers)
-[![fork](https://gitee.com/IoTSharp/IoTSharp/badge/fork.svg?theme=gvp)](https://gitee.com/IoTSharp/IoTSharp/members)
-
-
-IoTSharp is an open-source IoT platform for data collection, processing, visualization, and device management.
-
-## Here is a blessing for all users of this project
- * May you do good and not evil.
- * May you find forgiveness for yourself and forgive others.
- * May you share freely, never taking more than you give.
-
-
-## What databases are supported?
-
- *  [PostgreSql](IoTSharp/appsettings.PostgreSql.json) The test environment is  PostgreSQL 11.3,Support for  sharding.
- *  [MySql](IoTSharp/appsettings.MySql.json) The test environment is MySQL 8.0.17,Support for  sharding.
- *  [Oracle](IoTSharp/appsettings.Oracle.json)  The test environment is  Oracle Standard Edition 12c Release 2 on CentOS , Support for  sharding.  See also: https://github.com/MaksymBilenko/docker-oracle-12c
- *  [SQLServer](IoTSharp/appsettings.SQLServer.json)  Microsoft SQL Server 2016 (RTM-GDR) (KB4019088) - 13.0.1742.0 (X64)   ,Support for  sharding
- *  [Sqlite](IoTSharp/appsettings.Sqlite.json) Support for  sharding
- *  [Cassandra](IoTSharp/appsettings.Cassandra.json)  
-
-## What time series databases are supported??
-
- *  InfluxDB   
- *  IoTDB
- *  TDengine
- *  TimescaleDB
- *  PinusDB  
- *  Relational databases are also supported, either single tables or sharding.  
-
-
-## What EventBus Message Queue  are supported?
-
- *  RabbitMQ
- *  Kafka 
- *	InMemory 
- *	ZeroMQ 
- *	NATS 
- *	Pulsar 
- *	RedisStreams 
- *	AmazonSQS 
- *	AzureServiceBus 
-
-## What EventBus Store are supported?
-* PostgreSql,
-* MongoDB,
-* InMemory,
-* LiteDB,
-* MySql,
-* SqlServer
-
-
-## IoTSharp Demo       
-
- - [IoTSharp front-end implemented using Vue3](http://demo.iotsharp.net)
-
-
-##  IoTSharp cloud  
-  https://cloud.iotsharp.net/
-
-## doc
-  https://docs.iotsharp.net/
-
-## How to deploy?
-
-- [Deploy by Docker](https://docs.iotsharp.net/docs/tutorial-basics/deploy_by_docker)
-- [Deploy to Linux](https://docs.iotsharp.net/docs/tutorial-basics/deploy_linux)
-- [Deployed to Windows](https://docs.iotsharp.net/docs/tutorial-basics/deploy_win)
-
-## How to configure?
-
-- [AppSettings](https://docs.iotsharp.net/docs/tutorial-basics/appsettings) 
-
-##  IoTSharp.SDKs
-
-- IoTSharp.Sdk.Http   [![IoTSharp.Sdk.Http](https://img.shields.io/nuget/v/IoTSharp.Sdk.Http.svg)](https://www.nuget.org/packages/IoTSharp.Sdk.Http/)
-- IoTSharp.Sdk.MQTT   [![IoTSharp.Sdk.MQTT](https://img.shields.io/nuget/v/IoTSharp.Sdk.MQTT.svg)](https://www.nuget.org/packages/IoTSharp.Sdk.MQTT/)
-
- 
-
-## IoTSharp-C-Client-Sdk
-
-IoTSharp-C-client-Sdk is mqttt client, write by   c;
-
- [https://github.com/IoTSharp/IoTSharp.Sdks.MQTT-C](https://github.com/IoTSharp/IoTSharp.Sdks.MQTT-C)
-
-## paho.mqtt.c's demo 
-
-It' like IoTSharp-C-Client-Sdk, but is use paho.mqtt.c
- https://github.com/IoTSharp/IoTSharp.Edge.paho.mqtt.c
-
-## IoTSharp for nanoFramework
-
-IoTSharp.Edge.nanoFramework is a nanoFramework's mqtt client , it run on STM32 ！
-
-  https://github.com/IoTSharp/IoTSharp.Edge.nanoFramework
-
-more info read https://www.cnblogs.com/MysticBoy/p/13159648.html
-or click  https://www.nanoframework.net/
-
-## IoTSharp for RTthread Package
-
-https://github.com/IoTSharp/iotsharp-rtthread-package
-
-
-
-## IoTSharp's ecosystem
-
-- IoTSharp.Sdk.Http   [![IoTSharp.Sdk.Http](https://img.shields.io/nuget/v/IoTSharp.Sdk.Http.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Sdk.Http) ](https://www.nuget.org/packages/IoTSharp.Sdk.Http/)
-- IoTSharp.Sdk.MQTT   [![IoTSharp.Sdk.MQTT](https://img.shields.io/nuget/v/IoTSharp.Sdk.MQTT.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Sdk.MQTT)  ](https://www.nuget.org/packages/IoTSharp.Sdk.MQTT/)
-- MQTTnet.AspNetCore.Routing   [![MQTTnet.AspNetCore.Routing](https://img.shields.io/nuget/v/MQTTnet.AspNetCore.Routing.svg) ![Nuget](https://img.shields.io/nuget/dt/MQTTnet.AspNetCore.Routing)  ](https://www.nuget.org/packages/MQTTnet.AspNetCore.Routing/)
-- IoTSharp.EntityFrameworkCore.Taos   [![IoTSharp.EntityFrameworkCore.Taos](https://img.shields.io/nuget/v/IoTSharp.EntityFrameworkCore.Taos.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.EntityFrameworkCore.Taos)  ](https://www.nuget.org/packages/IoTSharp.EntityFrameworkCore.Taos/)
-- IoTSharp.X509Extensions [![IoTSharp.X509Extensions](https://img.shields.io/nuget/v/IoTSharp.X509Extensions.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.X509Extensions) ](https://www.nuget.org/packages/IoTSharp.X509Extensions/)
-- IoTSharp.Extensions.RESTful  [![IoTSharp.Extensions.RESTful](https://img.shields.io/nuget/v/IoTSharp.Extensions.RESTful.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions.RESTful) ](https://www.nuget.org/packages/IoTSharp.Extensions.RESTful/)
-- IoTSharp.Extensions.QuartzJobScheduler  [![IoTSharp.Extensions.QuartzJobScheduler](https://img.shields.io/nuget/v/IoTSharp.Extensions.QuartzJobScheduler.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions.QuartzJobScheduler) ](https://www.nuget.org/packages/IoTSharp.Extensions.QuartzJobScheduler/)
-- IoTSharp.Extensions.EFCore  [![IoTSharp.Extensions.EFCore](https://img.shields.io/nuget/v/IoTSharp.Extensions.EFCore.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions.EFCore)  ](https://www.nuget.org/packages/IoTSharp.Extensions.EFCore/)
-- IoTSharp.Extensions.BouncyCastle  [![IoTSharp.Extensions.BouncyCastle](https://img.shields.io/nuget/v/IoTSharp.Extensions.BouncyCastle.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions.BouncyCastle) ](https://www.nuget.org/packages/IoTSharp.Extensions.BouncyCastle/)
-- IoTSharp.Extensions.AspNetCore  [![IoTSharp.Extensions.AspNetCore](https://img.shields.io/nuget/v/IoTSharp.Extensions.AspNetCore.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions.AspNetCore) ](https://www.nuget.org/packages/IoTSharp.Extensions.AspNetCore/)
-- IoTSharp.Extensions  [![IoTSharp.Extensions](https://img.shields.io/nuget/v/IoTSharp.Extensions.svg) ![Nuget](https://img.shields.io/nuget/dt/IoTSharp.Extensions)  ](https://www.nuget.org/packages/IoTSharp.Extensions/)
-
-
-
-
-## Contributing
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/IoTSharp/IoTSharp/pulls)
-
-If you would like to contribute, feel free to create a [Pull Request](https://github.com/IoTSharp/IoTSharp/pulls), or give us [Bug Report](https://github.com/IoTSharp/IoTSharp/issues/new).
-
-### Contributors
-
-This project exists thanks to all the people who contribute.
-
+<p dir="auto"><a href="https://ci.appveyor.com/project/MaiKeBing/iotsharp/branch/master" rel="nofollow"><img src="https://camo.githubusercontent.com/c2262fdb89b1635a461d93ae8f2f0fec24335cdeb0bd5dc9babb7c5c8eb5af62/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f356f3233663576737338396374326c772f6272616e63682f6d61737465723f7376673d74727565" alt="构建状态" data-canonical-src="https://ci.appveyor.com/api/projects/status/5o23f5vss89ct2lw/branch/master?svg=true" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/42902345d874e73a6ed2f00f914e9edb342837fcf3c9d0232922c865551ce7c9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f696f7473686172702f696f7473686172702e737667"><img src="https://camo.githubusercontent.com/42902345d874e73a6ed2f00f914e9edb342837fcf3c9d0232922c865551ce7c9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f696f7473686172702f696f7473686172702e737667" alt="GitHub" data-canonical-src="https://img.shields.io/github/license/iotsharp/iotsharp.svg" style="max-width: 100%;"></a>
+<a href="https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-build.yml"><img src="https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-build.yml/badge.svg" alt=".NET Core 构建" style="max-width: 100%;"></a>
+<a href="https://github.com/IoTSharp/IoTSharp/actions/workflows/pages/pages-build-deployment"><img src="https://github.com/IoTSharp/IoTSharp/actions/workflows/pages/pages-build-deployment/badge.svg" alt="页面构建部署" style="max-width: 100%;"></a>
+<a href="https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-publish.yml"><img src="https://github.com/IoTSharp/IoTSharp/actions/workflows/dotnet-publish.yml/badge.svg" alt="构建和包装" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ab9a99435358eb7155a4c6b2b75f6220d2f19154e0cb0ce72ce91f12e76e9936/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f636c6f75642f6275696c642f6d61696b6562696e672f696f7473686172703f7374796c653d666c61742d737175617265"><img src="https://camo.githubusercontent.com/ab9a99435358eb7155a4c6b2b75f6220d2f19154e0cb0ce72ce91f12e76e9936/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f636c6f75642f6275696c642f6d61696b6562696e672f696f7473686172703f7374796c653d666c61742d737175617265" alt="Docker 云构建状态" data-canonical-src="https://img.shields.io/docker/cloud/build/maikebing/iotsharp?style=flat-square" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/392deeae43d35829ba7fe0c1be0b0ecda37d17eb5bcff45aa30547cb482232fd/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f6d61696b6562696e672f696f747368617270"><img src="https://camo.githubusercontent.com/392deeae43d35829ba7fe0c1be0b0ecda37d17eb5bcff45aa30547cb482232fd/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f6d61696b6562696e672f696f747368617270" alt="Docker 拉取" data-canonical-src="https://img.shields.io/docker/pulls/maikebing/iotsharp" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/47bd06b706a50efc6d25fd1e9499f94955bd0cd3a9f6ab693c97b7187ae7a4e4/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f696f7473686172702f696f7473686172702f746f74616c"><img src="https://camo.githubusercontent.com/47bd06b706a50efc6d25fd1e9499f94955bd0cd3a9f6ab693c97b7187ae7a4e4/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f696f7473686172702f696f7473686172702f746f74616c" alt="GitHub 所有版本" data-canonical-src="https://img.shields.io/github/downloads/iotsharp/iotsharp/total" style="max-width: 100%;"></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FIoTSharp%2FIoTSharp?ref=badge_shield" rel="nofollow"><img src="https://camo.githubusercontent.com/3e39a835ec62e72aa2c8724e72f92152034941ba10e9071065666c5721f77b82/68747470733a2f2f6170702e666f7373612e636f6d2f6170692f70726f6a656374732f6769742532426769746875622e636f6d253246496f545368617270253246496f5453686172702e7376673f747970653d736869656c64" alt="FOSSA 状态" data-canonical-src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FIoTSharp%2FIoTSharp.svg?type=shield" style="max-width: 100%;"></a>
+<a href="https://gitee.com/IoTSharp/IoTSharp/stargazers" rel="nofollow"><img src="https://camo.githubusercontent.com/f005a5d232a816e0aad05f4a78707c6971147e56c444a032e99d3d9a02464ad2/68747470733a2f2f67697465652e636f6d2f496f5453686172702f496f5453686172702f62616467652f737461722e7376673f7468656d653d677670" alt="星星" data-canonical-src="https://gitee.com/IoTSharp/IoTSharp/badge/star.svg?theme=gvp" style="max-width: 100%;"></a>
+<a href="https://gitee.com/IoTSharp/IoTSharp/members" rel="nofollow"><img src="https://camo.githubusercontent.com/c86c7af10643d8592e5177f0387e06416bbe77c469793e8dec9d64742f5c4ec5/68747470733a2f2f67697465652e636f6d2f496f5453686172702f496f5453686172702f62616467652f666f726b2e7376673f7468656d653d677670" alt="叉" data-canonical-src="https://gitee.com/IoTSharp/IoTSharp/badge/fork.svg?theme=gvp" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp 是一个用于数据收集、处理、可视化和设备管理的开源物联网平台。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是对本项目所有用户的祝福</font></font></h2><a id="user-content-here-is-a-blessing-for-all-users-of-this-project" class="anchor" aria-label="永久链接：这是对该项目所有用户的祝福。" href="#here-is-a-blessing-for-all-users-of-this-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">愿你行善，不作恶。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">希望您能原谅自己并原谅他人。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">愿您自由地分享，永远不会索取超过所付出的。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持哪些数据库？</font></font></h2><a id="user-content-what-databases-are-supported" class="anchor" aria-label="永久链接：支持哪些数据库？" href="#what-databases-are-supported"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.PostgreSql.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PostgreSql</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试环境为PostgreSQL 11.3,支持sharding。</font></font></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.MySql.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MySql</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试环境为MySQL 8.0.17,支持sharding。</font></font></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.Oracle.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oracle</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  测试环境为 CentOS 上的 Oracle Standard Edition 12c Release 2 ，支持分片。另请参阅： https: </font></font><a href="https://github.com/MaksymBilenko/docker-oracle-12c"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//github.com/MaksymBilenko/docker-oracle-12c</font></font></a></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.SQLServer.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQLServer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">   Microsoft SQL Server 2016 (RTM-GDR) (KB4019088) - 13.0.1742.0 (X64)，支持分片</font></font></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.Sqlite.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sqlite</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持分片</font></font></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/IoTSharp/appsettings.Cassandra.json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡桑德拉</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持哪些时间序列数据库？</font></font></h2><a id="user-content-what-time-series-databases-are-supported" class="anchor" aria-label="永久链接：支持哪些时间序列数据库？" href="#what-time-series-databases-are-supported"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流入数据库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网数据库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TD引擎</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">时间尺度数据库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">松属DB</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">还支持关系数据库，无论是单表还是分片。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持哪些EventBus消息队列？</font></font></h2><a id="user-content-what-eventbus-message-queue--are-supported" class="anchor" aria-label="永久链接：支持哪些 EventBus 消息队列？" href="#what-eventbus-message-queue--are-supported"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RabbitMQ</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡夫卡</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在记忆中</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">零MQ</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国家运输安全局</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">脉冲星</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RedisStreams</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">亚马逊SQS</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azure服务总线</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持哪些 EventBus Store？</font></font></h2><a id="user-content-what-eventbus-store-are-supported" class="anchor" aria-label="永久链接：支持哪些 EventBus Store？" href="#what-eventbus-store-are-supported"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PostgreSQL，</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MongoDB，</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在记忆中，</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LiteDB，</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MySql，</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp 演示</font></font></h2><a id="user-content-iotsharp-demo" class="anchor" aria-label="永久链接：IoTSharp 演示" href="#iotsharp-demo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="http://demo.iotsharp.net" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用Vue3实现的IoTSharp前端</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网Sharp云</font></font></h2><a id="user-content-iotsharp-cloud" class="anchor" aria-label="永久链接：IoTSharp 云" href="#iotsharp-cloud"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://cloud.iotsharp.net/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://cloud.iotsharp.net/</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2><a id="user-content-doc" class="anchor" aria-label="永久链接：doc" href="#doc"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://docs.iotsharp.net/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://docs.iotsharp.net/</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何部署？</font></font></h2><a id="user-content-how-to-deploy" class="anchor" aria-label="永久链接：如何部署？" href="#how-to-deploy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://docs.iotsharp.net/docs/tutorial-basics/deploy_by_docker" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 Docker 部署</font></font></a></li>
+<li><a href="https://docs.iotsharp.net/docs/tutorial-basics/deploy_linux" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署到 Linux</font></font></a></li>
+<li><a href="https://docs.iotsharp.net/docs/tutorial-basics/deploy_win" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署到 Windows</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何配置？</font></font></h2><a id="user-content-how-to-configure" class="anchor" aria-label="永久链接：如何配置？" href="#how-to-configure"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://docs.iotsharp.net/docs/tutorial-basics/appsettings" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序设置</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.SDKs</font></font></h2><a id="user-content-iotsharpsdks" class="anchor" aria-label="永久链接：IoTSharp.SDKs" href="#iotsharpsdks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网Sharp.Sdk.Http   </font></font><a href="https://www.nuget.org/packages/IoTSharp.Sdk.Http/" rel="nofollow"><img src="https://camo.githubusercontent.com/b602700b09b4f6286b9f687de8af118a9db3153c2ff37c29ee68843c5a309bf9/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e53646b2e487474702e737667" alt="物联网Sharp.Sdk.Http" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Sdk.Http.svg" style="max-width: 100%;"></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网Sharp.Sdk.MQTT   </font></font><a href="https://www.nuget.org/packages/IoTSharp.Sdk.MQTT/" rel="nofollow"><img src="https://camo.githubusercontent.com/150d7113ede2c2e8f7563ea9e9500eb906a879942d8563fa12b2fede1e5fda07/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e53646b2e4d5154542e737667" alt="物联网Sharp.Sdk.MQTT" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Sdk.MQTT.svg" style="max-width: 100%;"></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp-C-客户端-Sdk</font></font></h2><a id="user-content-iotsharp-c-client-sdk" class="anchor" aria-label="永久链接：IoTSharp-C-Client-Sdk" href="#iotsharp-c-client-sdk"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp-C-client-Sdk 是 mqttt 客户端，用 c 编写；</font></font></p>
+<p dir="auto"><a href="https://github.com/IoTSharp/IoTSharp.Sdks.MQTT-C"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/IoTSharp/IoTSharp.Sdks.MQTT-C</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">paho.mqtt.c 的演示</font></font></h2><a id="user-content-pahomqttcs-demo" class="anchor" aria-label="永久链接：paho.mqtt.c 的演示" href="#pahomqttcs-demo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它类似于 IoTSharp-C-Client-Sdk，但使用 paho.mqtt.c
+ </font></font><a href="https://github.com/IoTSharp/IoTSharp.Edge.paho.mqtt.c"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/IoTSharp/IoTSharp.Edge.paho.mqtt.c</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于 nanoFramework 的 IoTSharp</font></font></h2><a id="user-content-iotsharp-for-nanoframework" class="anchor" aria-label="永久链接：用于 nanoFramework 的 IoTSharp" href="#iotsharp-for-nanoframework"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.Edge.nanoFramework 是 nanoFramework 的 mqtt 客户端，运行在 STM32 上！</font></font></p>
+<p dir="auto"><a href="https://github.com/IoTSharp/IoTSharp.Edge.nanoFramework"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/IoTSharp/IoTSharp.Edge.nanoFramework</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多信息请阅读</font></font><a href="https://www.cnblogs.com/MysticBoy/p/13159648.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.cnblogs.com/MysticBoy/p/13159648.html</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+或点击  </font></font><a href="https://www.nanoframework.net/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.nanoframework.net/</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RTthread 软件包中的 IoTSharp</font></font></h2><a id="user-content-iotsharp-for-rtthread-package" class="anchor" aria-label="永久链接：RTthread 软件包中的 IoTSharp" href="#iotsharp-for-rtthread-package"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/IoTSharp/iotsharp-rtthread-package"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/IoTSharp/iotsharp-rtthread-package</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp 的生态系统</font></font></h2><a id="user-content-iotsharps-ecosystem" class="anchor" aria-label="永久链接：IoTSharp 的生态系统" href="#iotsharps-ecosystem"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网Sharp.Sdk.Http   </font></font><a href="https://www.nuget.org/packages/IoTSharp.Sdk.Http/" rel="nofollow"><img src="https://camo.githubusercontent.com/b602700b09b4f6286b9f687de8af118a9db3153c2ff37c29ee68843c5a309bf9/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e53646b2e487474702e737667" alt="物联网Sharp.Sdk.Http" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Sdk.Http.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/1839c2e700ff6d7d86668a29558d97f72847ebd47b35a65c14aa389d379f1941/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e53646b2e48747470" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Sdk.Http" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网Sharp.Sdk.MQTT   </font></font><a href="https://www.nuget.org/packages/IoTSharp.Sdk.MQTT/" rel="nofollow"><img src="https://camo.githubusercontent.com/150d7113ede2c2e8f7563ea9e9500eb906a879942d8563fa12b2fede1e5fda07/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e53646b2e4d5154542e737667" alt="物联网Sharp.Sdk.MQTT" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Sdk.MQTT.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/240e4aeae074ffb38f1acced95c0d8ba6117d2fc4df28b74ceb040430a4c120a/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e53646b2e4d515454" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Sdk.MQTT" style="max-width: 100%;">  </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MQTTnet.AspNetCore.路由   </font></font><a href="https://www.nuget.org/packages/MQTTnet.AspNetCore.Routing/" rel="nofollow"><img src="https://camo.githubusercontent.com/6e3ca225750f826b936fc1cc6f932b1d78d6969fbb7574bcd5a096c2038ccc3f/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f4d5154546e65742e4173704e6574436f72652e526f7574696e672e737667" alt="MQTTnet.AspNetCore.路由" data-canonical-src="https://img.shields.io/nuget/v/MQTTnet.AspNetCore.Routing.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/1d26afb2c12176bed50a89a95039d27207975611502e210169043f32f302fa94/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f4d5154546e65742e4173704e6574436f72652e526f7574696e67" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/MQTTnet.AspNetCore.Routing" style="max-width: 100%;">  </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.EntityFrameworkCore.Taos   </font></font><a href="https://www.nuget.org/packages/IoTSharp.EntityFrameworkCore.Taos/" rel="nofollow"><img src="https://camo.githubusercontent.com/75543d287d73237e0180662b6e461c48cbe4d14309c63a4aa07d7271459242ad/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e456e746974794672616d65776f726b436f72652e54616f732e737667" alt="IoTSharp.EntityFrameworkCore.Taos" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.EntityFrameworkCore.Taos.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/8f7613604e9d31a677735288e8a82e884cef66128d844973fcefcb0cf7a184d6/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e456e746974794672616d65776f726b436f72652e54616f73" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.EntityFrameworkCore.Taos" style="max-width: 100%;">  </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.X509扩展</font></font><a href="https://www.nuget.org/packages/IoTSharp.X509Extensions/" rel="nofollow"><img src="https://camo.githubusercontent.com/cc14da9004e7cdcf96c916e128a6bc65c00a29f021ebfec7d3eaa5bf4a01af23/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e58353039457874656e73696f6e732e737667" alt="IoTSharp.X509扩展" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.X509Extensions.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/1cdb5f216ed99b98f4c56b6e0f9f1dec820ee7601b8d27effed1055e574a134d/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e58353039457874656e73696f6e73" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.X509Extensions" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.Extensions.RESTful  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions.RESTful/" rel="nofollow"><img src="https://camo.githubusercontent.com/778c56aeb6f71ad6878b63b5322c5ebdca0181bb979733844f48b9be27241300/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e5245535466756c2e737667" alt="IoTSharp.Extensions.RESTful" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.RESTful.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/98978f40089523964bd2ff49e97e24c5a770f81b1f878c5614ff4347cc9d2512/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e732e5245535466756c" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions.RESTful" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.Extensions.QuartzJobScheduler  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions.QuartzJobScheduler/" rel="nofollow"><img src="https://camo.githubusercontent.com/c1181dfefa94493e7cfee234878935b24c4b847e6cff64ca069dd2f7987a462b/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e51756172747a4a6f625363686564756c65722e737667" alt="IoTSharp.Extensions.QuartzJobScheduler" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.QuartzJobScheduler.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/d4a393e864efc607badddfbed9bc37de21fd67204f86a2f1bf504a0ded9417bb/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e732e51756172747a4a6f625363686564756c6572" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions.QuartzJobScheduler" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.扩展.EFCore  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions.EFCore/" rel="nofollow"><img src="https://camo.githubusercontent.com/17665de995337e320049c722c38edb03ab2be2b14e80d2204251643ea31ab99d/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e4546436f72652e737667" alt="IoTSharp.扩展.EFCore" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.EFCore.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/7eb3f70cf1fe85f17bb299eb6e54d597ecea61da2445eb4c94618971f23d62ec/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e732e4546436f7265" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions.EFCore" style="max-width: 100%;">  </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.Extensions.BouncyCastle  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions.BouncyCastle/" rel="nofollow"><img src="https://camo.githubusercontent.com/2d95aecf984fb42d61c09a853a3009e14a0e1553f7b0119488baff18fe5f2917/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e426f756e6379436173746c652e737667" alt="IoTSharp.Extensions.BouncyCastle" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.BouncyCastle.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/61168a87a250d6fea8afca88f19d68c792ee867e9cc2a2546d21646bfa78670e/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e732e426f756e6379436173746c65" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions.BouncyCastle" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.扩展.AspNetCore  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions.AspNetCore/" rel="nofollow"><img src="https://camo.githubusercontent.com/cc1393b4821cd0d0e6afdd4e7202174d269699b4d116211ed5ab8e59e6d7b6c4/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e4173704e6574436f72652e737667" alt="IoTSharp.扩展.AspNetCore" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.AspNetCore.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/ef851f5111b45526c194c4e5d5daed008b23514d56d8618564b433eac1b4a646/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e732e4173704e6574436f7265" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions.AspNetCore" style="max-width: 100%;"> </a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp.扩展  </font></font><a href="https://www.nuget.org/packages/IoTSharp.Extensions/" rel="nofollow"><img src="https://camo.githubusercontent.com/02c515c51f20374263e93e84ce62870158b90f4affd1cfbedaef951b713c7791/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f496f5453686172702e457874656e73696f6e732e737667" alt="IoTSharp.扩展" data-canonical-src="https://img.shields.io/nuget/v/IoTSharp.Extensions.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/a900b8a5b9aa34adbcb8ba001482c2bb1c030b0abc2d14212e86343b105a1d5b/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f64742f496f5453686172702e457874656e73696f6e73" alt="纽盖特" data-canonical-src="https://img.shields.io/nuget/dt/IoTSharp.Extensions" style="max-width: 100%;">  </a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contributing" class="anchor" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/IoTSharp/IoTSharp/pulls"><img src="https://camo.githubusercontent.com/a5ceaa9e114c16d2c7cfd7ef62032b26b6eb47b61b1263ae4ebc5497fedd45b2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c61742d737175617265" alt="欢迎 PR" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想做出贡献，请随意创建一个</font></font><a href="https://github.com/IoTSharp/IoTSharp/pulls"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pull 请求</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，或者给我们提供</font></font><a href="https://github.com/IoTSharp/IoTSharp/issues/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bug 报告</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></h3><a id="user-content-contributors" class="anchor" aria-label="永久链接：贡献者" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目的存在要感谢所有做出贡献的人。</font></font></p>
 <a href="https://github.com/IoTSharp/IoTSharp/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=IoTSharp/IoTSharp" />
+  <img src="https://camo.githubusercontent.com/c4bb5eea23888cc05b487e6521183712ddbaf3102a4986b9c5c71ecf670d3a02/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d496f5453686172702f496f545368617270" data-canonical-src="https://contrib.rocks/image?repo=IoTSharp/IoTSharp" style="max-width: 100%;">
 </a>
-
-## Donation
-
-This project is an  Apache 2.0 licensed open source project. In order to achieve better and sustainable development of the project, we expect to gain more backers. We will use the proceeds for community operations and promotion. You can support us in any of the following ways:
-
-- [OpenCollective](https://opencollective.com/IoTSharp)
-- [爱发电](https://afdian.net/a/maikebing)
-- [捐赠者名单](BACKERS.md)
-- 微信![二维码](docs/static/img/maikebing_wxpay.png)
-
-
-## Community Support
-
-If you encounter any problems in the process, feel free to ask for help via following channels. We also encourage experienced users to help newcomers.
-
-| 公众号 |    [QQ群63631741](https://jq.qq.com/?_wv=1027&k=HJ7h3gbO)  |  微信群  |
-| ------ | ---- | ---- |
-| ![](docs/static/img/qrcode.jpg) | ![](docs/static/img/IoTSharpQQGruop.png) | ![企业微信群](docs/static/img/qyqun.jpg) |
-
-## dotNET China
-
-[![DotNetChina](https://images.gitee.com/uploads/images/2021/0309/134044_9c191d7b_974299.png)](https://gitee.com/dotnetchina/IoTSharp)
-
-## 优秀开源社区
-* [LinkWeChat](https://gitee.com/LinkWeChat/link-wechat) LinkWeChat 是基于企业微信的开源 SCRM 系统，是企业私域流量管理与营销的综合解决方案。
-* [IoTSharp](https://gitee.com/IoTSharp) IoTSharp 是一个 基于.Net Core 开源的物联网基础平台， 支持 HTTP、MQTT 、CoAp 协议
-* [流之云](https://gitee.com/ntdgg) 信息化、数字化服务提供商
-* [translate.js](https://gitee.com/mail_osc/translate) 网页自动翻译，页面无需另行改造，加入两行js即可让你的网页快速具备多国语言切换能力！
-* [IoTGateway](https://gitee.com/iioter/iotgateway) IoTGateway是一个基于.Net6.0 开源的物联网网关，通过可视化配置，轻松的连接到你的任何设备和物联网平台。
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐款</font></font></h2><a id="user-content-donation" class="anchor" aria-label="永久链接：捐赠" href="#donation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本项目为Apache 2.0许可开源项目，为了项目能够更好、更持续的发展，我们期望获得更多支持者，我们将把所得收益用于社区运营和推广，您可以通过以下任意一种方式支持我们：</font></font></p>
+<ul dir="auto">
+<li><a href="https://opencollective.com/IoTSharp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开放集体</font></font></a></li>
+<li><a href="https://afdian.net/a/maikebing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱发</font></font></a></li>
+<li><a href="/IoTSharp/IoTSharp/blob/master/BACKERS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐赠者名单</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微信</font></font><a target="_blank" rel="noopener noreferrer" href="/IoTSharp/IoTSharp/blob/master/docs/static/img/maikebing_wxpay.png"><img src="/IoTSharp/IoTSharp/raw/master/docs/static/img/maikebing_wxpay.png" alt="二维码" style="max-width: 100%;"></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区支持</font></font></h2><a id="user-content-community-support" class="anchor" aria-label="固定链接：社区支持" href="#community-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您在此过程中遇到任何问题，请随时通过以下渠道寻求帮助。我们也鼓励经验丰富的用户帮助新手。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公众号</font></font></th>
+<th><a href="https://jq.qq.com/?_wv=1027&amp;k=HJ7h3gbO" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">QQ群63631741</font></font></a></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微信群</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener noreferrer" href="/IoTSharp/IoTSharp/blob/master/docs/static/img/qrcode.jpg"><img src="/IoTSharp/IoTSharp/raw/master/docs/static/img/qrcode.jpg" alt="" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="/IoTSharp/IoTSharp/blob/master/docs/static/img/IoTSharpQQGruop.png"><img src="/IoTSharp/IoTSharp/raw/master/docs/static/img/IoTSharpQQGruop.png" alt="" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="/IoTSharp/IoTSharp/blob/master/docs/static/img/qyqun.jpg"><img src="/IoTSharp/IoTSharp/raw/master/docs/static/img/qyqun.jpg" alt="企业微信群" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dotNET中国</font></font></h2><a id="user-content-dotnet-china" class="anchor" aria-label="永久链接：dotNET 中国" href="#dotnet-china"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://gitee.com/dotnetchina/IoTSharp" rel="nofollow"><img src="https://camo.githubusercontent.com/77530d1fc4d7a3ba532ccbe8991e064d13afd339c7c527f032a5391afe1112c7/68747470733a2f2f696d616765732e67697465652e636f6d2f75706c6f6164732f696d616765732f323032312f303330392f3133343034345f39633139316437625f3937343239392e706e67" alt="点网中国" data-canonical-src="https://images.gitee.com/uploads/images/2021/0309/134044_9c191d7b_974299.png" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优秀开源社区</font></font></h2><a id="user-content-优秀开源社区" class="anchor" aria-label="固定链接：优秀开源社区" href="#优秀开源社区"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://gitee.com/LinkWeChat/link-wechat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LinkWeChat</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> LinkWeChat 是基于企业微信的开源 SCRM 系统，是企业私有域流量管理与营销的综合解决方案。</font></font></li>
+<li><a href="https://gitee.com/IoTSharp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTSharp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> IoTSharp 是一个基于.Net Core 开源的物联网基础平台，支持 HTTP、MQTT 、CoAp 协议</font></font></li>
+<li><a href="https://gitee.com/ntdgg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">流之云</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">信息化、数字化的愿景</font></font></li>
+<li><a href="https://gitee.com/mail_osc/translate" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Translation.js</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网页自动翻译，页面无需另行改造，加入两行js即可让你的网页快速具备多国语言切换能力！</font></font></li>
+<li><a href="https://gitee.com/iioter/iotgateway" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IoTGateway</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> IoTGateway是一个基于.Net6.0开源的物联网网关，通过可视化配置，轻松的连接到你的任何国家的物联网平台。</font></font></li>
+</ul>
+</article></div>
